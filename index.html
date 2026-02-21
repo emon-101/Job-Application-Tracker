@@ -33,7 +33,7 @@
       }
     </style>
   </head>
-  <body class="w-4/5 mx-auto py-14">
+  <body class="w-4/5 mx-auto py-14 bg-[ #F8FAFC]">
     <header>
       <h1 class="text-3xl font-bold text-[#323B49] mb-5">
         Job Application Tracker
@@ -81,14 +81,14 @@
         </div>
         <!-- job count section buttons -->
         <div class="mt-6">
-          <button class="btn px-12 btn-primary">All</button>
-          <button class="btn btn-soft mx-2">Interview</button>
-          <button class="btn btn-soft">Rejected</button>
+          <button onclick="showOne('jobs-cards')" class="btn px-12 btn-primary">All</button>
+          <button onclick="showOne('interview-section')" class="btn btn-soft mx-2">Interview</button>
+          <button onclick="showOne('rejection-section')" class="btn btn-soft">Rejected</button>
         </div>
       </section>
 
       <!-- Job Cards -->
-      <section>
+      <section id="jobs-cards" class="">
         <!-- Cards container -->
         <div class="space-y-4">
           <!-- card 1 -->
@@ -456,7 +456,34 @@
         </div>
       </section>
 
-      
+      <!-- Interview section -->
+      <section id="interview-section" class="hidden">
+        <!-- container -->
+        <div class="">
+            <!-- default page -->
+            <div class="text-center space-y-1 my-28">
+                <div class="flex justify-center items-center"><img src="./assets/jobs.png" alt=""></div>
+                <h1 class="text-[#002c5cFF] text-2xl font-bold">No jobs available</h1>
+                <p class="text-[#64748bFF] text-sm">Check back soon for new job opportunities</p>
+            </div>
+        </div>
+      </section>
+
+      <!-- Rejection section -->
+      <section id="rejection-section" class="hidden">
+        <!-- container -->
+        <div class="">
+            <!-- default page -->
+            <div class="text-center space-y-1 my-28">
+                <div class="flex justify-center items-center"><img src="./assets/jobs.png" alt=""></div>
+                <h1 class="text-[#002c5cFF] text-2xl font-bold">No jobs available</h1>
+                <p class="text-[#64748bFF] text-sm">Check back soon for new job opportunities</p>
+            </div>
+        </div>
+      </section>
     </main>
+
+    <!-- script files -->
+    <script src="./scripts/utility.js"></script>
   </body>
 </html>
