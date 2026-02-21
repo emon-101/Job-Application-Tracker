@@ -81,9 +81,9 @@
         </div>
         <!-- job count section buttons -->
         <div class="mt-6">
-          <button onclick="showOne('jobs-cards')" class="btn px-12 btn-primary">All</button>
-          <button onclick="showOne('interview-section')" class="btn btn-soft mx-2">Interview</button>
-          <button onclick="showOne('rejection-section')" class="btn btn-soft">Rejected</button>
+          <button id="btn-jobs" onclick="showOne('jobs-cards','btn-jobs')" class="btn px-12 btn-primary">All</button>
+          <button id="btn-interview" onclick="showOne('interview-section','btn-interview')" class="btn mx-2">Interview</button>
+          <button id="btn-rejection" onclick="showOne('rejection-section','btn-rejection')" class="btn ">Rejected</button>
         </div>
       </section>
 
@@ -457,7 +457,7 @@
       </section>
 
       <!-- Interview section -->
-      <section id="interview-section" class="hidden">
+      <section id="interview-section" class="hidden space-y-4">
         <!-- container -->
         <div class="">
             <!-- default page -->
@@ -470,7 +470,7 @@
       </section>
 
       <!-- Rejection section -->
-      <section id="rejection-section" class="hidden">
+      <section id="rejection-section" class="hidden space-y-3">
         <!-- container -->
         <div class="">
             <!-- default page -->

@@ -1,15 +1,23 @@
 // show one section
-function showOne(id) {
+function showOne(id, btn) {
     const jobs = document.getElementById('jobs-cards');
+    const btnJobs = document.getElementById('btn-jobs')
     const interviews = document.getElementById('interview-section');
+    const btnInterview = document.getElementById('btn-interview');
     const rejections = document.getElementById('rejection-section');
+    const btnRejection = document.getElementById('btn-rejection');
 
     jobs.classList.add('hidden');
+    btnJobs.classList.remove('btn-primary');
     interviews.classList.add('hidden');
+    btnInterview.classList.remove('btn-primary');
     rejections.classList.add('hidden');
+    btnRejection.classList.remove('btn-primary');
 
     const selected = document.getElementById(id);
     selected.classList.remove('hidden');
+    const selectedBtn = document.getElementById(btn);
+    selectedBtn.classList.add('btn-primary');
 }
 
 // card section
