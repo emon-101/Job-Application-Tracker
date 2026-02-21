@@ -26,8 +26,8 @@ function interviewClick(id, card) {
     const addCard = document.getElementById(card);
     badge.innerText = 'INTERVIEW';
     badge.classList.add('bg-green-600');
-    badge.classList.remove('bg-red-600');
     badge.classList.add('text-white');
+    badge.classList.remove('bg-red-600');
 
     const interviewCount = document.getElementById('interview-count');
     const interviewCountValue = interviewCount.innerText;
@@ -51,8 +51,8 @@ function rejectedClick(id, card) {
     const addCard = document.getElementById(card);
     badge.innerText = 'REJECTED';
     badge.classList.add('bg-red-600');
-    badge.classList.remove('bg-green-600');
     badge.classList.add('text-white');
+    badge.classList.remove('bg-green-600');
 
     const rejectedCount = document.getElementById('rejected-count');
     const rejectedCountValue = rejectedCount.innerText;
