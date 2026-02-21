@@ -92,7 +92,7 @@
         <!-- Cards container -->
         <div class="space-y-4">
           <!-- card 1 -->
-          <div class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
+          <div id="card1" class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
             <!-- company name -->
             <div class="flex items-center justify-between">
               <div class="">
@@ -115,7 +115,7 @@
             </div>
             <!-- badge -->
             <div class="mt-5">
-              <button
+              <button id="badge-1"
                 class="bg-[#eef4ffFF] px-4 py-2 rounded-lg text-sm text-[#002c5cFF]"
               >
                 NOT APPLIED
@@ -130,14 +130,14 @@
             </div>
             <!-- applied & rejection button -->
             <div class="mt-5">
-              <button class="btn btn-outline text-green-600 mr-1">
+              <button onclick="interviewClick('badge-1', 'card1')" class="btn btn-outline text-green-600 mr-1">
                 INTERVIEW
               </button>
-              <button class="btn btn-outline text-red-600">REJECTED</button>
+              <button onclick="rejectedClick('badge-1', 'card1')" class="btn btn-outline text-red-600">REJECTED</button>
             </div>
           </div>
           <!-- card 2 -->
-          <div class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
+          <div id="card2" class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
             <!-- company name -->
             <div class="flex items-center justify-between">
               <div class="">
@@ -160,7 +160,7 @@
             </div>
             <!-- badge -->
             <div class="mt-5">
-              <button
+              <button id="badge-2"
                 class="bg-[#eef4ffFF] px-4 py-2 rounded-lg text-sm text-[#002c5cFF]"
               >
                 NOT APPLIED
@@ -175,14 +175,14 @@
             </div>
             <!-- applied & rejection button -->
             <div class="mt-5">
-              <button class="btn btn-outline text-green-600 mr-1">
+              <button onclick="interviewClick('badge-2', 'card2')" class="btn btn-outline text-green-600 mr-1">
                 INTERVIEW
               </button>
-              <button class="btn btn-outline text-red-600">REJECTED</button>
+              <button onclick="rejectedClick('badge-2', 'card2')" class="btn btn-outline text-red-600">REJECTED</button>
             </div>
           </div>
           <!-- card 3 -->
-          <div class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
+          <div id="card3" class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
             <!-- company name -->
             <div class="flex items-center justify-between">
               <div class="">
@@ -205,7 +205,7 @@
             </div>
             <!-- badge -->
             <div class="mt-5">
-              <button
+              <button id="badge-3"
                 class="bg-[#eef4ffFF] px-4 py-2 rounded-lg text-sm text-[#002c5cFF]"
               >
                 NOT APPLIED
@@ -220,14 +220,14 @@
             </div>
             <!-- applied & rejection button -->
             <div class="mt-5">
-              <button class="btn btn-outline text-green-600 mr-1">
+              <button onclick="interviewClick('badge-3', 'card3')" class="btn btn-outline text-green-600 mr-1">
                 INTERVIEW
               </button>
-              <button class="btn btn-outline text-red-600">REJECTED</button>
+              <button onclick="rejectedClick('badge-3', 'card3')" class="btn btn-outline text-red-600">REJECTED</button>
             </div>
           </div>
           <!-- card 4 -->
-          <div class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
+          <div id="card4" class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
             <!-- company name -->
             <div class="flex items-center justify-between">
               <div class="">
@@ -250,7 +250,7 @@
             </div>
             <!-- badge -->
             <div class="mt-5">
-              <button
+              <button id="badge-4"
                 class="bg-[#eef4ffFF] px-4 py-2 rounded-lg text-sm text-[#002c5cFF]"
               >
                 NOT APPLIED
@@ -265,14 +265,14 @@
             </div>
             <!-- applied & rejection button -->
             <div class="mt-5">
-              <button class="btn btn-outline text-green-600 mr-1">
+              <button onclick="interviewClick('badge-4', 'card4')" class="btn btn-outline text-green-600 mr-1">
                 INTERVIEW
               </button>
-              <button class="btn btn-outline text-red-600">REJECTED</button>
+              <button onclick="rejectedClick('badge-4', 'card4')" class="btn btn-outline text-red-600">REJECTED</button>
             </div>
           </div>
           <!-- card 5 -->
-          <div class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
+          <div id="card5" class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
             <!-- company name -->
             <div class="flex items-center justify-between">
               <div class="">
@@ -295,7 +295,7 @@
             </div>
             <!-- badge -->
             <div class="mt-5">
-              <button
+              <button id="badge-5"
                 class="bg-[#eef4ffFF] px-4 py-2 rounded-lg text-sm text-[#002c5cFF]"
               >
                 NOT APPLIED
@@ -311,14 +311,14 @@
             </div>
             <!-- applied & rejection button -->
             <div class="mt-5">
-              <button class="btn btn-outline text-green-600 mr-1">
+              <button onclick="interviewClick('badge-5', 'card5')" class="btn btn-outline text-green-600 mr-1">
                 INTERVIEW
               </button>
-              <button class="btn btn-outline text-red-600">REJECTED</button>
+              <button onclick="rejectedClick('badge-5', 'card5')" class="btn btn-outline text-red-600">REJECTED</button>
             </div>
           </div>
           <!-- card 6 -->
-          <div class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
+          <div id="card6" class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
             <!-- company name -->
             <div class="flex items-center justify-between">
               <div class="">
@@ -341,7 +341,7 @@
             </div>
             <!-- badge -->
             <div class="mt-5">
-              <button
+              <button id="badge-6"
                 class="bg-[#eef4ffFF] px-4 py-2 rounded-lg text-sm text-[#002c5cFF]"
               >
                 NOT APPLIED
@@ -357,14 +357,14 @@
             </div>
             <!-- applied & rejection button -->
             <div class="mt-5">
-              <button class="btn btn-outline text-green-600 mr-1">
+              <button onclick="interviewClick('badge-6', 'card6')" class="btn btn-outline text-green-600 mr-1">
                 INTERVIEW
               </button>
-              <button class="btn btn-outline text-red-600">REJECTED</button>
+              <button onclick="rejectedClick('badge-6', 'card6')" class="btn btn-outline text-red-600">REJECTED</button>
             </div>
           </div>
           <!-- card 7 -->
-          <div class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
+          <div id="card7" class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
             <!-- company name -->
             <div class="flex items-center justify-between">
               <div class="">
@@ -387,7 +387,7 @@
             </div>
             <!-- badge -->
             <div class="mt-5">
-              <button
+              <button id="badge-7"
                 class="bg-[#eef4ffFF] px-4 py-2 rounded-lg text-sm text-[#002c5cFF]"
               >
                 NOT APPLIED
@@ -403,14 +403,14 @@
             </div>
             <!-- applied & rejection button -->
             <div class="mt-5">
-              <button class="btn btn-outline text-green-600 mr-1">
+              <button onclick="interviewClick('badge-7', 'card7')" class="btn btn-outline text-green-600 mr-1">
                 INTERVIEW
               </button>
-              <button class="btn btn-outline text-red-600">REJECTED</button>
+              <button onclick="rejectedClick('badge-7', 'card7')" class="btn btn-outline text-red-600">REJECTED</button>
             </div>
           </div>
           <!-- card 8 -->
-          <div class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
+          <div id="card8" class="p-6 rounded-lg border border-[#f1f2f4FF] shadow">
             <!-- company name -->
             <div class="flex items-center justify-between">
               <div class="">
@@ -433,7 +433,7 @@
             </div>
             <!-- badge -->
             <div class="mt-5">
-              <button
+              <button id="badge-8"
                 class="bg-[#eef4ffFF] px-4 py-2 rounded-lg text-sm text-[#002c5cFF]"
               >
                 NOT APPLIED
@@ -447,10 +447,10 @@
             </div>
             <!-- applied & rejection button -->
             <div class="mt-5">
-              <button class="btn btn-outline text-green-600 mr-1">
+              <button onclick="interviewClick('badge-8', 'card8')" class="btn btn-outline text-green-600 mr-1">
                 INTERVIEW
               </button>
-              <button class="btn btn-outline text-red-600">REJECTED</button>
+              <button onclick="rejectedClick('badge-8', 'card8')" class="btn btn-outline text-red-600">REJECTED</button>
             </div>
           </div>
         </div>
@@ -461,7 +461,7 @@
         <!-- container -->
         <div class="">
             <!-- default page -->
-            <div class="text-center space-y-1 my-28">
+            <div id="default-interview" class="text-center space-y-1 my-28">
                 <div class="flex justify-center items-center"><img src="./assets/jobs.png" alt=""></div>
                 <h1 class="text-[#002c5cFF] text-2xl font-bold">No jobs available</h1>
                 <p class="text-[#64748bFF] text-sm">Check back soon for new job opportunities</p>
@@ -474,7 +474,7 @@
         <!-- container -->
         <div class="">
             <!-- default page -->
-            <div class="text-center space-y-1 my-28">
+            <div id="default-rejection" class="text-center space-y-1 my-28">
                 <div class="flex justify-center items-center"><img src="./assets/jobs.png" alt=""></div>
                 <h1 class="text-[#002c5cFF] text-2xl font-bold">No jobs available</h1>
                 <p class="text-[#64748bFF] text-sm">Check back soon for new job opportunities</p>
@@ -485,5 +485,6 @@
 
     <!-- script files -->
     <script src="./scripts/utility.js"></script>
+    <script src="./scripts/cards.js"></script>
   </body>
 </html>
