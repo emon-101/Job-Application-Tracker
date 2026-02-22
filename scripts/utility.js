@@ -119,3 +119,13 @@ function rejectedClick(id, card) {
         defaultRejection.classList.remove('hidden');
     }
 }
+
+// Delete button
+function deleteBtn(id) {
+    const mainCard = document.getElementById(id);
+    mainCard.remove();
+    const totalCount = document.getElementById('total-count');
+    totalCount.innerText--;
+    const totalJobs = document.getElementById('available-job-count');
+    totalJobs.innerText--;
+}
