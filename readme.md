@@ -3,3 +3,9 @@
 ### Ans-> getElementById we use it for get a specific element from html file and for select many elments together use getElementsByClassName, we use querySelector/querySelectorAll like css styles if we need a specific elments form another specific element then we use querySelector/querySelectorAll if we need the first occurrrence from the element then use the querySelector and if need all occurrence then use the querySelectorAll
 
 # 2. How do you create and insert a new element into the DOM?
+
+### Ans-> step-1: create the new element -> const element = document.createElement('element name') 
+### step-2: set the element content -> element.innerHTML = html file or text
+### step-3: where to add the element -> elementContainer = document.getElementById('element-container')
+### step-4: insert the element -> elementContainer.appendChild(element)
+
