@@ -1,12 +1,14 @@
 // show one section
 function showOne(id, btn) {
+    // get the counting cards
     const jobs = document.getElementById('jobs-cards');
-    const btnJobs = document.getElementById('btn-jobs')
+    const btnJobs = document.getElementById('btn-jobs');
     const interviews = document.getElementById('interview-section');
     const btnInterview = document.getElementById('btn-interview');
     const rejections = document.getElementById('rejection-section');
     const btnRejection = document.getElementById('btn-rejection');
 
+    // adding classed on the cards
     jobs.classList.add('hidden');
     btnJobs.classList.remove('btn-primary');
     interviews.classList.add('hidden');
@@ -14,10 +16,17 @@ function showOne(id, btn) {
     rejections.classList.add('hidden');
     btnRejection.classList.remove('btn-primary');
 
+    // add or remove specific cards
     const selected = document.getElementById(id);
     selected.classList.remove('hidden');
     const selectedBtn = document.getElementById(btn);
     selectedBtn.classList.add('btn-primary');
+
+    // update the jobs count for all jobs, interview and rejected count
+    const availableJobsCount = document.getElementById('available-job-count');
+    if(selectedBtn.innerText==='All') availableJobsCount.innerText = document.getElementById('total-count').innerText;
+    else if(selectedBtn.innerText==='Interview') availableJobsCount.innerText = document.getElementById('interview-count').innerText;
+    else availableJobsCount.innerText = document.getElementById('rejected-count').innerText;
 }
 
 // card section
